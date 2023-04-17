@@ -1,0 +1,397 @@
+[
+    {
+        "id": "fab72aede9f38d62",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e1fa9461cc9872a0",
+        "type": "inject",
+        "z": "fab72aede9f38d62",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "9265aecdbde12eab",
+                "02359f2870f8e4fc"
+            ]
+        ]
+    },
+    {
+        "id": "9265aecdbde12eab",
+        "type": "MC Write",
+        "z": "fab72aede9f38d62",
+        "name": "D0",
+        "topic": "",
+        "connection": "2da4cdd64e4a2e68",
+        "data": "payload",
+        "address": "D0",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 450,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02359f2870f8e4fc",
+        "type": "debug",
+        "z": "fab72aede9f38d62",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "20be70e24723f40d",
+        "type": "comment",
+        "z": "fab72aede9f38d62",
+        "name": "Write_D0_Int16",
+        "info": "",
+        "x": 160,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2f9f1bc4a6bc5d11",
+        "type": "inject",
+        "z": "fab72aede9f38d62",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "57097e9d4c37524f",
+                "74c2b8ba80e26ff2"
+            ]
+        ]
+    },
+    {
+        "id": "fa6f0f1606fa91fc",
+        "type": "inject",
+        "z": "fab72aede9f38d62",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "57097e9d4c37524f",
+                "74c2b8ba80e26ff2"
+            ]
+        ]
+    },
+    {
+        "id": "57097e9d4c37524f",
+        "type": "MC Write",
+        "z": "fab72aede9f38d62",
+        "name": "M0",
+        "topic": "",
+        "connection": "2da4cdd64e4a2e68",
+        "data": "payload",
+        "address": "M0",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 450,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74c2b8ba80e26ff2",
+        "type": "debug",
+        "z": "fab72aede9f38d62",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c0582e3865362060",
+        "type": "comment",
+        "z": "fab72aede9f38d62",
+        "name": "Write_Bit_M0",
+        "info": "",
+        "x": 150,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d51e882f42dae71b",
+        "type": "inject",
+        "z": "fab72aede9f38d62",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100.88",
+        "payloadType": "num",
+        "x": 150,
+        "y": 620,
+        "wires": [
+            [
+                "d4dbde3a112fae47",
+                "d86c9275f48ce358"
+            ]
+        ]
+    },
+    {
+        "id": "d4dbde3a112fae47",
+        "type": "MC Write",
+        "z": "fab72aede9f38d62",
+        "name": "D10",
+        "topic": "",
+        "connection": "2da4cdd64e4a2e68",
+        "data": "payload",
+        "address": "DREAL10",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 450,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d86c9275f48ce358",
+        "type": "debug",
+        "z": "fab72aede9f38d62",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2fb9d712fc7418cc",
+        "type": "comment",
+        "z": "fab72aede9f38d62",
+        "name": "Write_D10_Floating",
+        "info": "",
+        "x": 170,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "291b1fcd0c213b2e",
+        "type": "MC Read",
+        "z": "fab72aede9f38d62",
+        "name": "M0",
+        "topic": "",
+        "connection": "2da4cdd64e4a2e68",
+        "address": "M0",
+        "addressType": "str",
+        "outputFormat": 0,
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 970,
+        "y": 300,
+        "wires": [
+            [
+                "1734dd21d425c700"
+            ]
+        ]
+    },
+    {
+        "id": "8b94cd92ef0bab29",
+        "type": "inject",
+        "z": "fab72aede9f38d62",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 770,
+        "y": 300,
+        "wires": [
+            [
+                "291b1fcd0c213b2e",
+                "1597daf96578e291",
+                "8ce147b2c95503d4"
+            ]
+        ]
+    },
+    {
+        "id": "1734dd21d425c700",
+        "type": "debug",
+        "z": "fab72aede9f38d62",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1597daf96578e291",
+        "type": "MC Read",
+        "z": "fab72aede9f38d62",
+        "name": "D0",
+        "topic": "",
+        "connection": "2da4cdd64e4a2e68",
+        "address": "D0",
+        "addressType": "str",
+        "outputFormat": 0,
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 970,
+        "y": 400,
+        "wires": [
+            [
+                "1734dd21d425c700"
+            ]
+        ]
+    },
+    {
+        "id": "8ce147b2c95503d4",
+        "type": "MC Read",
+        "z": "fab72aede9f38d62",
+        "name": "D10",
+        "topic": "",
+        "connection": "2da4cdd64e4a2e68",
+        "address": "DREAL10",
+        "addressType": "str",
+        "outputFormat": "1",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 970,
+        "y": 520,
+        "wires": [
+            [
+                "1734dd21d425c700"
+            ]
+        ]
+    },
+    {
+        "id": "7f7187ce9bfd7b95",
+        "type": "comment",
+        "z": "fab72aede9f38d62",
+        "name": "Read_Bit_M0",
+        "info": "",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5a9b297f68666b5e",
+        "type": "comment",
+        "z": "fab72aede9f38d62",
+        "name": "Read_D0_Int16",
+        "info": "",
+        "x": 1000,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "865ad87ac1a8e8bc",
+        "type": "comment",
+        "z": "fab72aede9f38d62",
+        "name": "Read_D10_Floating",
+        "info": "",
+        "x": 1010,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2da4cdd64e4a2e68",
+        "type": "MC Protocol Connection",
+        "name": "",
+        "host": "192.168.0.40",
+        "port": "9000",
+        "protocol": "TCP",
+        "frame": "1E",
+        "plcType": "Q",
+        "ascii": false,
+        "PLCStation": "",
+        "PCStation": "",
+        "PLCModuleNo": "",
+        "network": "",
+        "octalInputOutput": false,
+        "timeout": "1000"
+    }
+]
