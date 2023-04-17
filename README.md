@@ -38,4 +38,10 @@ Online > Write to PLC
 ![image](https://user-images.githubusercontent.com/67640462/232587093-65a67dbb-3451-4486-b4da-20cf44bbc324.png)
 
 
+<< การตั้งค่าใช้งานบน Node-Red >>
+1. Download&Install Pallete > "MC Protocol"
+2. Write data to PLC >> example flow: 
+
+![image](https://user-images.githubusercontent.com/67640462/232591562-6e378657-3a31-4f7b-b715-09ff3f8179b4.png)
+
 
