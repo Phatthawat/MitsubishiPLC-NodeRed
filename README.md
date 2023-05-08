@@ -1,5 +1,5 @@
 # วิธีเชื่อมต่อ FX5U PLC Mitsubishi เข้ากับ Node-red ด้วย MC Protocol เพื่อรับส่งข้อมูล
-
+YouTube : https://youtu.be/ucVW0-j6oM4
  << วิธีการตั้งค่าฝั่ง PLC >>
 
 
